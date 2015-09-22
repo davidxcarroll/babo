@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<style type="text/css">
+		body {
+			margin: 2em;
+			font: 100 2em "Helvetica";
+		}
+	</style>
+</head>
+<body>
+
+<h1 id="one"></h1>
+<h1 id="two"></h1>
+
+<script>
+
+	var pets = ['Dog','Pizza','Christmas',];
+	for (var i = 0; i < pets.length; i++) {
+		pets[i] = pets[i] + 's';
+	};
+	document.getElementById("one").innerHTML = pets;
+
+
+	// var text = "<ul>";
+	var fruits = ["Banana", "Orange", "Apple", "Mango"];
+	for (var index = 0; index < fruits.length; index++) {
+	    // text += "<li>" + fruits[index] + "</li>";
+	    fruits[index] = fruits[index] + 's';
+	};
+	// text += "</ul>";
+	document.getElementById("two").innerHTML = fruits;
+
+</script>
+
+</body>
+</html>

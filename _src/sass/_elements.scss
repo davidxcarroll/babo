@@ -1,0 +1,82 @@
+// NATIVE
+// ============================================================
+
+* {
+	transition: all .1s ease-in-out;
+}
+
+// BODY
+// ====================
+
+.time {
+	position: absolute;
+	top: 0;
+	right: 2em;
+
+	height: 100vh;
+	
+	border-right: solid 1em rgba(255,255,255,.2);
+	@include pad(2em);
+	
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	
+	h1 {
+		font: 6em/0em $font-h1;
+	}
+	h2 {
+		font: 1em/0em $font-h2;
+		letter-spacing: .2em;
+	}
+}
+.time-date {}
+.time-week {
+	&:after {
+		content: "•";
+		font: 1.4em/0em sans-serif;
+		position: absolute;
+		right: -.22em;
+	}
+}
+.time-unit {}
+
+.week {
+	width: 100%;
+	height: 100vh;
+
+	position: relative;
+
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+
+	@include media(min-width $tablet) {
+		background-attachment: fixed;
+  }
+  @include media(max-width $tablet) {
+  	background-attachment: static;
+  }
+}
+
+@each $date in 150628,
+							 150705,
+							 150712,
+							 150719,
+							 150726,
+							 150802,
+							 150809,
+							 150816,
+							 150823,
+							 150830,
+							 150906,
+							 150913,
+							 150920,
+							 150927 {
+	.week-#{$date} {
+		background-image: url('../_img/#{$date}.jpg');
+	}
+}

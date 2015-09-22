@@ -1,0 +1,17 @@
+.section {
+  @include outer-container;
+}
+
+// Three column
+
+.items-message .items-message-item {
+	@include span-columns(4);
+}
+
+// Three to one on medium
+
+@include media(768px) {
+	.items-sales .items-sales-item {
+		@include span-columns(4);
+	}
+}

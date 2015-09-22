@@ -1,0 +1,18 @@
+$white: #fff;
+$light: #f2f2e7;
+$red:   #f53;
+$green: #3c4d27;
+$black: #000;
+
+$widescreen: 1200px;
+$desktop:    1024px;
+$tablet:     768px;
+$portrait:   480px;
+
+// $font-h1: 'Short Stack', cursive;
+$font-h1: 'Itim', cursive;
+$font-h2: 'Lato', sans-serif;
+
+@mixin text-align($alignment) {
+	text-align: $alignment;
+}
