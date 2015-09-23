@@ -15,7 +15,7 @@ ul, li {
 // ============================================================
 
 .week {
-	background-color: #eee;
+	background-color: rgba($accent, .2);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -29,7 +29,6 @@ ul, li {
 
 .content {
 	position: relative;
-	// left: 2em;
 	height: 100vh;
 	text-align: left;
 }
@@ -53,7 +52,9 @@ ul, li {
 .time-week:before {
 	content: "•";
 	font: 1.4em/.8em sans-serif;
+	color: $accent;
 	position: absolute;
+	left: -.22em;
 }
 
 // MEDIA: LARGE
@@ -67,17 +68,23 @@ ul, li {
 		background-attachment: fixed;
 	}
 
+	.week-1 {
+    .content {
+    	top: 8em;
+    	.time {
+    		padding-top: 0;
+    		@include margin(-4em null null);
+    	}
+    }
+  }
+
 	.content {
-		color: #fff;
-		border-left: solid 1em rgba(255,255,255,.2);
+		color: $accent;
+		border-left: solid .6em rgba($accent, .2);
 	}
 
 	.time {
 		@include pad(4em);
-	}
-
-	.time-week:before {
-		left: -.24em;
 	}
 
 }
@@ -110,8 +117,8 @@ ul, li {
   	height: 28em;
   	top: -8em;
 
-		color: #FF8066;
-		border-left: solid .6em rgba(180,90,70,.2);
+		color: $accent;
+		border-left: solid .6em rgba($accent, .2);
 	}
 
 	.time {
@@ -127,7 +134,6 @@ ul, li {
 	.time-week:before {
 		font-size: 3em;
 		line-height: .4em;
-		left: -.22em;
 	}
 
 }

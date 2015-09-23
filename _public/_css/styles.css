@@ -396,7 +396,7 @@ ul, li {
   padding: 0; }
 
 .week {
-  background-color: #eee;
+  background-color: rgba(242, 222, 0, 0.2);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -543,7 +543,9 @@ ul, li {
 .time-week:before {
   content: "•";
   font: 1.4em/.8em sans-serif;
-  position: absolute; }
+  color: #F2DE00;
+  position: absolute;
+  left: -.22em; }
 
 @media screen and (min-width: 768px) {
   .week {
@@ -551,13 +553,16 @@ ul, li {
     height: 100vh;
     padding: 0 0 0 2em;
     background-attachment: fixed; }
+  .week-1 .content {
+    top: 8em; }
+    .week-1 .content .time {
+      padding-top: 0;
+      margin-top: -4em; }
   .content {
-    color: #fff;
-    border-left: solid 1em rgba(255, 255, 255, 0.2); }
+    color: #F2DE00;
+    border-left: solid 0.6em rgba(242, 222, 0, 0.2); }
   .time {
-    padding: 4em; }
-  .time-week:before {
-    left: -.24em; } }
+    padding: 4em; } }
 
 @media screen and (max-width: 768px) {
   .week {
@@ -578,8 +583,8 @@ ul, li {
   .content {
     height: 28em;
     top: -8em;
-    color: #FF8066;
-    border-left: solid 0.6em rgba(180, 90, 70, 0.2); }
+    color: #F2DE00;
+    border-left: solid 0.6em rgba(242, 222, 0, 0.2); }
   .time {
     padding: 2em; }
     .time h1 {
@@ -588,5 +593,4 @@ ul, li {
       font-size: .8em; }
   .time-week:before {
     font-size: 3em;
-    line-height: .4em;
-    left: -.22em; } }
+    line-height: .4em; } }
