@@ -25,36 +25,13 @@
 
 <script type="text/javascript">
 
-  // Set date
-  var date = new Date(2015, 5, 11);
-  
-  var weeks = 0;
-  // Number of weeks
-  while (weeks < 40) {
-    weeks += 1;
-    // Adding 7 days per week
-    date.setDate(date.getDate() + 7);
+var temperatures = [100,90,99,80,70,65,30,10];
 
-    // None of that '1 weeks' shit
-    if (weeks <= 1) { weeksUnit = ' week'; } else { weeksUnit = ' weeks'; }
-
-    document.write(
-      '<ul><li class="week week-'
-      + weeks
-      + '"><div class="content"><div class="time"><h2 class="time-date">'
-      + date.toDateString()
-      + '</h2><h1 class="time-week">'
-      + weeks
-      + weeksUnit
-      + '</h1></div></div></li></ul>'
-    )
-  }
+while ( var i = 0; i < temperatures.length; i += 1 ) {
+  console.log(temperatures);
+}
 
 </script>
-
-<div class="countdown">
-  <h1>30 days left!</h1>
-</div>
 
 <script type="text/javascript" src="../_src/js/countdownjs/countdown.js"></script>
 

@@ -390,82 +390,203 @@ html {
 * {
   transition: all 0.1s ease-in-out; }
 
-.time {
-  position: absolute;
-  top: 0;
-  right: 2em;
-  height: 100vh;
-  border-right: solid 1em rgba(255, 255, 255, 0.2);
-  padding: 2em;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff; }
-  .time h1 {
-    font: 6em/0em "Itim", cursive; }
-  .time h2 {
-    font: 1em/0em "Lato", sans-serif;
-    letter-spacing: .2em; }
-
-.time-week:after {
-  content: "•";
-  font: 1.4em/0em sans-serif;
-  position: absolute;
-  right: -.22em; }
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 .week {
-  width: 100%;
-  height: 100vh;
-  position: relative;
+  background-color: #eee;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover; }
-  @media screen and (min-width: 768px) {
-    .week {
-      background-attachment: fixed; } }
-  @media screen and (max-width: 768px) {
-    .week {
-      background-attachment: static; } }
 
-.week-150628 {
-  background-image: url("../_img/150628.jpg"); }
+.week-1 {
+  background-image: url("../_img/1.jpg"); }
 
-.week-150705 {
-  background-image: url("../_img/150705.jpg"); }
+.week-2 {
+  background-image: url("../_img/2.jpg"); }
 
-.week-150712 {
-  background-image: url("../_img/150712.jpg"); }
+.week-3 {
+  background-image: url("../_img/3.jpg"); }
 
-.week-150719 {
-  background-image: url("../_img/150719.jpg"); }
+.week-4 {
+  background-image: url("../_img/4.jpg"); }
 
-.week-150726 {
-  background-image: url("../_img/150726.jpg"); }
+.week-5 {
+  background-image: url("../_img/5.jpg"); }
 
-.week-150802 {
-  background-image: url("../_img/150802.jpg"); }
+.week-6 {
+  background-image: url("../_img/6.jpg"); }
 
-.week-150809 {
-  background-image: url("../_img/150809.jpg"); }
+.week-7 {
+  background-image: url("../_img/7.jpg"); }
 
-.week-150816 {
-  background-image: url("../_img/150816.jpg"); }
+.week-8 {
+  background-image: url("../_img/8.jpg"); }
 
-.week-150823 {
-  background-image: url("../_img/150823.jpg"); }
+.week-9 {
+  background-image: url("../_img/9.jpg"); }
 
-.week-150830 {
-  background-image: url("../_img/150830.jpg"); }
+.week-10 {
+  background-image: url("../_img/10.jpg"); }
 
-.week-150906 {
-  background-image: url("../_img/150906.jpg"); }
+.week-11 {
+  background-image: url("../_img/11.jpg"); }
 
-.week-150913 {
-  background-image: url("../_img/150913.jpg"); }
+.week-12 {
+  background-image: url("../_img/12.jpg"); }
 
-.week-150920 {
-  background-image: url("../_img/150920.jpg"); }
+.week-13 {
+  background-image: url("../_img/13.jpg"); }
 
-.week-150927 {
-  background-image: url("../_img/150927.jpg"); }
+.week-14 {
+  background-image: url("../_img/14.jpg"); }
+
+.week-15 {
+  background-image: url("../_img/15.jpg"); }
+
+.week-16 {
+  background-image: url("../_img/16.jpg"); }
+
+.week-17 {
+  background-image: url("../_img/17.jpg"); }
+
+.week-18 {
+  background-image: url("../_img/18.jpg"); }
+
+.week-19 {
+  background-image: url("../_img/19.jpg"); }
+
+.week-20 {
+  background-image: url("../_img/20.jpg"); }
+
+.week-21 {
+  background-image: url("../_img/21.jpg"); }
+
+.week-22 {
+  background-image: url("../_img/22.jpg"); }
+
+.week-23 {
+  background-image: url("../_img/23.jpg"); }
+
+.week-24 {
+  background-image: url("../_img/24.jpg"); }
+
+.week-25 {
+  background-image: url("../_img/25.jpg"); }
+
+.week-26 {
+  background-image: url("../_img/26.jpg"); }
+
+.week-27 {
+  background-image: url("../_img/27.jpg"); }
+
+.week-28 {
+  background-image: url("../_img/28.jpg"); }
+
+.week-29 {
+  background-image: url("../_img/29.jpg"); }
+
+.week-30 {
+  background-image: url("../_img/30.jpg"); }
+
+.week-31 {
+  background-image: url("../_img/31.jpg"); }
+
+.week-32 {
+  background-image: url("../_img/32.jpg"); }
+
+.week-33 {
+  background-image: url("../_img/33.jpg"); }
+
+.week-34 {
+  background-image: url("../_img/34.jpg"); }
+
+.week-35 {
+  background-image: url("../_img/35.jpg"); }
+
+.week-36 {
+  background-image: url("../_img/36.jpg"); }
+
+.week-37 {
+  background-image: url("../_img/37.jpg"); }
+
+.week-38 {
+  background-image: url("../_img/38.jpg"); }
+
+.week-39 {
+  background-image: url("../_img/39.jpg"); }
+
+.week-40 {
+  background-image: url("../_img/40.jpg"); }
+
+.content {
+  position: relative;
+  height: 100vh;
+  text-align: left; }
+
+.time {
+  position: absolute;
+  top: 0; }
+  .time h1 {
+    font: 6em/1em "Permanent Marker", cursive;
+    margin: 0; }
+  .time h2 {
+    margin: 0;
+    font: 1em/1em "Lato", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .2em; }
+
+.time-week:before {
+  content: "•";
+  font: 1.4em/.8em sans-serif;
+  position: absolute; }
+
+@media screen and (min-width: 768px) {
+  .week {
+    width: 100%;
+    height: 100vh;
+    padding: 0 0 0 2em;
+    background-attachment: fixed; }
+  .content {
+    color: #fff;
+    border-left: solid 1em rgba(255, 255, 255, 0.2); }
+  .time {
+    padding: 4em; }
+  .time-week:before {
+    left: -.24em; } }
+
+@media screen and (max-width: 768px) {
+  .week {
+    width: 94%;
+    height: 20em;
+    margin-top: 8em;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 0 0 1em;
+    background-attachment: static; }
+  .week-1 {
+    margin-top: 8em; }
+    .week-1 .content {
+      top: -4em; }
+      .week-1 .content .time {
+        padding-top: 0;
+        margin-top: -2em; }
+  .content {
+    height: 28em;
+    top: -8em;
+    color: #FF8066;
+    border-left: solid 0.6em rgba(180, 90, 70, 0.2); }
+  .time {
+    padding: 2em; }
+    .time h1 {
+      font-size: 3em; }
+    .time h2 {
+      font-size: .8em; }
+  .time-week:before {
+    font-size: 3em;
+    line-height: .4em;
+    left: -.22em; } }
