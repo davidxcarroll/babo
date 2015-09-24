@@ -68,16 +68,6 @@ ul, li {
 		background-attachment: fixed;
 	}
 
-	.week-1 {
-    .content {
-    	top: 8em;
-    	.time {
-    		padding-top: 0;
-    		@include margin(-4em null null);
-    	}
-    }
-  }
-
 	.content {
 		color: $accent;
 		border-left: solid .6em rgba($accent, .2);
@@ -85,6 +75,10 @@ ul, li {
 
 	.time {
 		@include pad(4em);
+	}
+
+	.week-1 .content {
+		height: 9em;
 	}
 
 }
@@ -97,31 +91,20 @@ ul, li {
 	.week {
 		width: 94%;
   	height: 20em;
-  	@include margin(8em auto null);
+  	@include margin(null auto 8em);
   	@include pad(0 0 0 1em);
   	background-attachment: static;
   }
 
-  .week-1 {
-    margin-top: 8em;
-    .content {
-    	top: -4em;
-    	.time {
-    		padding-top: 0;
-    		@include margin(-2em null null);
-    	}
-    }
-  }
-
   .content {
-  	height: 28em;
-  	top: -8em;
+  	bottom: -8em;
 
 		color: $accent;
 		border-left: solid .6em rgba($accent, .2);
 	}
 
 	.time {
+		top: 12em;
 		@include pad(2em);
 		h1 {
 			font-size: 3em;
@@ -135,5 +118,16 @@ ul, li {
 		font-size: 3em;
 		line-height: .4em;
 	}
+
+  .week-1 {
+    margin-bottom: 6em;
+    .content {
+    	height: 5em;
+    	bottom: -19em;
+    	.time {
+    		top: 1em;
+    	}
+    }
+  }
 
 }

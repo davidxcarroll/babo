@@ -25,11 +25,28 @@
 
 <script type="text/javascript">
 
-var temperatures = [100,90,99,80,70,65,30,10];
+var playList = [
+  'I Did It My Way',
+  'Respect',
+  'Imagine',
+  'Born to Run',
+  'Louie Louie',
+  'Maybellene'
+];
 
-while ( var i = 0; i < temperatures.length; i += 1 ) {
-  console.log(temperatures);
+function print(message) {
+  document.write(message);
 }
+
+function printList( list ) {
+  var listHTML = '<ol>';
+  for ( var i = 0; i < list.length; i += 1 ) {
+    listHTML += '<li>' + list[i] + '</li>';
+  }
+  listHTML += '</ol>';
+  print(listHTML);
+}
+printList(playList);
 
 </script>
 
